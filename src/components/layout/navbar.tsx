@@ -12,6 +12,7 @@ const navItems = [
   { name: 'Features', href: '#features' },
   { name: 'Pricing', href: '#pricing' },
   { name: 'Docs', href: '/docs' },
+  { name: 'Download', href: '/download' },
 ]
 
 export function Navbar() {

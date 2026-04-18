@@ -8,6 +8,7 @@ import { Features } from '@/components/sections/features'
 import { CTA } from '@/components/sections/cta'
 import { InteractiveShowcase } from '@/components/sections/interactive-showcase'
 import { JourneyGuide } from '@/components/sections/journey-guide'
+import { Pricing } from '@/components/sections/pricing'
 import { BetaModal } from '@/components/layout/beta-modal'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <InteractiveShowcase />
         <Features />
         <JourneyGuide />
+        <Pricing />
         <CTA onCtaClick={() => setIsBetaOpen(true)} />
       </div>
       <Footer />

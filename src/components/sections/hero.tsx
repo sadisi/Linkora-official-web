@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 
@@ -81,32 +82,14 @@ export function Hero({ onCtaClick }: HeroProps) {
         >
           <div className="absolute -inset-4 bg-linear-to-r from-primary/20 to-accent/20 rounded-[2.5rem] blur-3xl opacity-0 group-hover:opacity-100 transition duration-1000" />
           <div className="relative aspect-video rounded-xl bg-[#1e1f22] border border-white/10 overflow-hidden shadow-2xl shadow-primary/20">
-            {/* Mock Editor UI */}
-            <div className="flex h-full">
-              <div className="w-16 border-r border-white/5 bg-black/20 flex flex-col items-center py-4 gap-4">
-                {[1, 2, 3, 4].map(i => (
-                  <div key={i} className="w-8 h-8 rounded-lg bg-white/5" />
-                ))}
-              </div>
-              <div className="w-64 border-r border-white/5 bg-black/10 p-4 space-y-4">
-                <div className="h-4 w-3/4 bg-white/10 rounded" />
-                {[1, 2, 3, 4, 5].map(i => (
-                  <div key={i} className="h-3 w-full bg-white/5 rounded" />
-                ))}
-              </div>
-              <div className="flex-1 p-8 text-left space-y-6">
-                <div className="h-8 w-1/2 bg-white/10 rounded" />
-                <div className="space-y-3">
-                  <div className="h-4 w-full bg-white/5 rounded" />
-                  <div className="h-4 w-5/6 bg-white/5 rounded" />
-                  <div className="h-4 w-4/6 bg-white/5 rounded" />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="aspect-video bg-primary/10 rounded-lg border border-primary/20" />
-                  <div className="aspect-video bg-accent/10 rounded-lg border border-accent/20" />
-                </div>
-              </div>
-            </div>
+            {/* Application Mockup */}
+            <Image 
+              src="/app-mockup.png"
+              alt="Linkora App Interface Preview"
+              fill
+              className="object-cover"
+              priority
+            />
             
             {/* Floating Glows */}
             <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-primary/30 rounded-full blur-2xl animate-pulse" />
